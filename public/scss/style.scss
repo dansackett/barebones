@@ -1,0 +1,10 @@
+@import 'mixins/_mixins';
+/*@import 'mixins/_animate';*/
+@import '_misc';
+
+$font-stack: 'Titillium Web', "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif !important;
+$line-height: 1.8em;
+
+body {
+  padding-top: 70px;
+}
