@@ -9,13 +9,13 @@ I know.
 Getting Setup
 -------------
 
-First off make sure you have ruby installed:
+First off make sure you have ruby and coffeescript installed:
 
-    sudo apt-get install ruby-full rubygems1.8
+    sudo apt-get install ruby-full coffeescript
 
-Once that's done, install SASS, Compass, and CoffeeScript:
+Once that's done, install SASS, Compass:
 
-    sudo gem install sass compass coffee-script
+    sudo gem install sass compass
 
 Run Watcher scripts:
 
