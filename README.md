@@ -11,7 +11,7 @@ Getting Setup
 
 First off make sure you have ruby and coffeescript installed:
 
-    sudo apt-get install ruby-full coffeescript
+    sudo apt-get install ruby-full rubygems1.8 coffeescript
 
 Once that's done, install SASS, Compass:
 
