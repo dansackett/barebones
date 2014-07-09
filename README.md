@@ -35,6 +35,10 @@ Setup this repo as a template:
 Go to your projects directory and create a middleman project:
 
     middleman init PROJECT_NAME --template=barebones
+    
+Change into your new project:
+
+    cd PROJECT_NAME
 
 Install Bower assets:
 
