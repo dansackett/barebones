@@ -1,0 +1,30 @@
+{
+  "name": "barebones",
+  "version": "0.0.2",
+  "homepage": "https://github.com/dansackett/barebones",
+  "authors": [
+    "Dan Sackett <danesackett@gmail.com>"
+  ],
+  "description": "Barebones frontend template",
+  "keywords": [
+    "coffeescript",
+    "bourbon",
+    "jquery",
+    "angularjs",
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.19",
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.1"
+  }
+}

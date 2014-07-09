@@ -9,17 +9,40 @@ I know.
 Getting Setup
 -------------
 
-First off make sure you have ruby and coffeescript installed:
+First off make sure you have ruby installed:
 
-    sudo apt-get install ruby-full rubygems1.8 coffeescript
+    sudo apt-get install ruby-full rubygems1.8
 
-Once that's done, install SASS, Compass:
+Also make sure you have nodeJS and NPM installed:
 
-    sudo gem install sass compass
+    sudo apt-get install -y python-software-properties
+    sudo add-apt-repository ppa:chris-lea/node.js
+    sudo apt-get update
+    sudo apt-get install nodejs
 
-Run Watcher scripts:
+Ensure you have middleman gem installed:
 
-    bash bin/run.sh
+    sudo gem install middleman
+
+Ensure you have bower installed:
+
+    sudo npm install -g bower
+
+Setup this repo as a template:
+
+    git clone git@github.com:dansackett/barebones ~/.middleman/barebones
+
+Go to your projects directory and create a middleman project:
+
+    middleman init PROJECT_NAME --template=barebones
+
+    Note: If middleman command doesn't work try "bundle exec middleman"
+
+Install Bower assets:
+
+    bower install
+
+You're good to go!
 
 Features
 --------
@@ -32,3 +55,9 @@ Features
 * [Twitter Bootstrap](http://getbootstrap.com) - For quick scaffolding.
 * [SASS](http://sass-lang.com/) - Making writing CSS less painful.
 * [Compass](http://compass-style.org/) - Making compiling SASS super easy.
+* [Bourbon](http://bourbon.io/) - Great mixins for SASS.
+* [Middleman](http://middlemanapp.com/) - Tool to build all files and compile
+  for production.
+
+Working With this Project
+-------------------------
