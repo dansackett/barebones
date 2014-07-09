@@ -18,7 +18,7 @@ Also make sure you have nodeJS and NPM installed:
     sudo apt-get install -y python-software-properties
     sudo add-apt-repository ppa:chris-lea/node.js
     sudo apt-get update
-    sudo apt-get install nodejs
+    sudo apt-get install nodejs npm
 
 Ensure you have middleman gem installed:
 
