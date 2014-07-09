@@ -36,8 +36,6 @@ Go to your projects directory and create a middleman project:
 
     middleman init PROJECT_NAME --template=barebones
 
-    Note: If middleman command doesn't work try "bundle exec middleman"
-
 Install Bower assets:
 
     bower install
@@ -59,5 +57,36 @@ Features
 * [Middleman](http://middlemanapp.com/) - Tool to build all files and compile
   for production.
 
+Troubleshooting
+---------------
+
+In some cases I've found that the bundler doesn't properly set middleman up in
+the new project. If this is the case follow the instructions and do the
+following:
+
+    bundle update
+
+If you are having trouble running `middleman COMMAND` try:
+
+    bundle exec middleman COMMAND
+
 Working With this Project
 -------------------------
+
+Once it's setup, you're good to start working. This setup will allow you to
+work on a server that live reloads as you make changes to your source files.
+To get the server running, do the following:
+
+    bundle exec middleman server
+
+This will create a server instance on `http://0.0.0.0:4567/`. Navigate to that
+URL and you have the website setup properly. You should now edit files in the
+source directory. When you are finished editing and want to get the production
+files together, do the following:
+
+    bundle exec middleman build
+
+This creates your build directory and updates all files for shipping to
+production.
+
+Enjoy the streamlined front-end life!

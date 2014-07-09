@@ -6,7 +6,7 @@ set :js_dir, 'js'
 set :images_dir, 'img'
 
 compass_config do |config|
-	config.add_import_path "./components"
+	config.add_import_path "./third-party"
 end
 
 after_configuration do
@@ -19,3 +19,5 @@ configure :build do
 	# activate :minify_javascript
 	# activate :relative_assets
 end
+
+sprockets.append_path File.join "#{root}", "third-party"
